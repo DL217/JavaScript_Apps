@@ -5,7 +5,7 @@ let high = 1000
 
 let guesses = 1
 
-console.log(); // Extra spaces were added to make the program more readable
+console.log(); // Extra spaces were added to make the output more readable
 console.log(`Please think of a number between ${low} and ${high}.`);
 console.log();
 
