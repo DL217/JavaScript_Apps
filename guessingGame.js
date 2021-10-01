@@ -33,8 +33,7 @@ rl.question("Press 'Enter' to start.", (firstResponse) => {
                         break;
                     case 'c':
                     case 'C':
-                        console.log();
-                        console.log("I was correct!");
+                        console.log("\nI was correct!");
                         console.log(`I got it in ${guesses} guess(es)!`);
                         rl.close();
                         break;
