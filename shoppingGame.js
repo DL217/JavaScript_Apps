@@ -2,7 +2,7 @@
 
 const shoppingList = ["computer", "monitor", "keyboard", "mouse", "hdmi cable", "dvd drive"];
 let computerParts = [];
-let validChoices = ["1", "2", "3", "4", "5", "6"];
+const validChoices = ["1", "2", "3", "4", "5", "6"];
 
 console.log("\nCongratulations! You are going shopping!")
 console.log("\nHere are the shopping items to choose from:")
