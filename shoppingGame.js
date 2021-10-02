@@ -26,11 +26,11 @@ rl.question("\nPress 'Enter' to start.", (firstResponse) => {
             rl.question ("\nAdd items to your cart by entering their corresponding number (one item at a time).", response => {
                 response = response.replace(/\s+/g, '');
                 if ((validChoices.includes(response) === false) || response === "") {
-                    console.log("Please enter a valid choice.");
+                    console.log("\nPlease enter a valid choice.");
                     itemSelection();
                 } else {
                     computerParts.push(shoppingList[response - 1]);
-                    console.log(`Adding ${response}. Your cart now contains: ${computerParts}.\nPlease select up to 6 items.`);
+                    console.log(`\nAdding ${response}. Your cart now contains: ${computerParts}.\nPlease select up to 6 items.`);
                     itemSelection();
                 }
             });
