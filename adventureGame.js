@@ -21,7 +21,7 @@ const rl = readline.createInterface({
 rl.question("Press 'Enter' to start.", (firstResponse) => {
     function exitSelection() {
         rl.question ("\nYou are lost!\nYou can go in one of the following directions: 'north', 'east', 'south', 'west'.\nPlease choose a direction, then press 'Enter'.", response => {
-            response = response.replace(/\s+/g, '');
+            response = response.trim();
             if (response !== correctExit) {
                 console.log("Wrong direction! Please try again.");
                 exitSelection();
