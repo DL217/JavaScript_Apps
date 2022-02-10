@@ -18,7 +18,7 @@ rl.question("Press 'Enter' to start.", (firstResponse) => {
     function test() {
         let guess = Math.floor(low + (high - low) / 2);
         rl.question(`\nI guessed that this is your number: ${guess}.\n\nShould I guess higher or lower?\n\nType 'H' if I should guess higher, or 'L' if I should guess lower, or 'C' if my guess was correct. Then press 'Enter'.`, (response) => {
-            response = response.replace(/\s+/g, '');
+            response = response.trim();
             if (low !== high) {
                 switch (response) {
                     case 'h':
