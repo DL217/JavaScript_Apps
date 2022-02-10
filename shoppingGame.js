@@ -24,7 +24,7 @@ rl.question("\nPress 'Enter' to start.", (firstResponse) => {
     function itemSelection() {
         if (computerParts.length !== shoppingList.length) {
             rl.question ("\nAdd items to your cart by entering their corresponding number (one item at a time).", response => {
-                response = response.replace(/\s+/g, '');
+                response = response.trim();
                 if ((validChoices.includes(response) === false) || response === "") {
                     console.log("\nPlease enter a valid choice.");
                     itemSelection();
