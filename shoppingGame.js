@@ -8,8 +8,8 @@ console.log("\nCongratulations! You are going shopping!")
 console.log("\nHere are the shopping items to choose from:")
 console.log() // Extra spaces were added to make the output more readable
 
-for (const [item, element] of shoppingList.entries()) {
-  console.log(item + 1, element);
+for (const [index, element] of shoppingList.entries()) {
+  console.log(index + 1, element);
 }
 
 console.log("\nThe store is in limited supply! You may only check out 6 items.")
